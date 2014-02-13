@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Web workshop</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,316 +34,336 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>GEWIS Website Workshop</h1>
+					<h3>The first one</h3>
 				</section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+                <section>
+                    <h1>Some remarks on beforehand</h1>
+                    <p>
+                        This is all based on Windows. So if you run Mac (yes, I'm talking about you, Jim), don't try to install the same things.
+                    </p>
+                    <p>
+                        Fortunately, most of these things are much easier to install on Mac.
+                    </p>
+                    <p>
+                    You might want to take a look at: <a href="http://akrabat.com/computing/setting-up-php-mysql-on-os-x-mavericks/">
+                        http://akrabat.com/computing/setting-up-php-mysql-on-os-x-mavericks/</a>
+                    </p>
+                    <aside class="notes">
+                        Voor Jim: Heb wel naar Mac gekeken, maar daar zal ik je zelf mee helpen.<br />
+                        De link staat iig in de slides. Je zou de stappen over 'PEAR', 'Compiling extensions'
+                        en 'PECL OAuth' kunnen skippen.
+                    </aside>
+                </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
+                <section>
+                    <section>
+                        <h2>Installation</h2>
+                        <h3>Already installed?</h3>
+                        <p>
+                            Apache, PHP, MySQL
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Install XAMPP</h2>
+                        <ul>
+                            <li>Install from <a href="http://apachefriends.org/">http://apachefriends.org</a></li>
+                            <li>Just agree with everything.</li>
+                            <li>Default settings are quite OK.</li>
+                            <li>You can leave out 'BitNami'. We don't need it.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Configure xdebug</h2>
+                        <ol>
+                            <li>Stop apache, if it is running</li>
+                            <li>Open <code>C:\xampp\php\php.ini</code></li>
+                            <li>Go to the bottom of the file</li>
+                            <li>Uncomment <code>zend_extension = "C:\xampp\php\ext\php_xdebug.dll"</code>
+                        </ol>
+                        <pre><code data-trim contenteditable>
+[XDebug]
+zend_extension = "C:\xampp\php\ext\php_xdebug.dll"
+;xdebug.profiler_append = 0
+;xdebug.profiler_enable = 1
+;xdebug.profiler_enable_trigger = 0
+;xdebug.profiler_output_dir = "C:\xampp\tmp"
+;xdebug.profiler_output_name = "cachegrind.out.%t-%s"
+;xdebug.remote_enable = 0
+;xdebug.remote_handler = "dbgp"
+;xdebug.remote_host = "127.0.0.1"
+;xdebug.trace_output_dir = "C:\xampp\tmp"
+                        </code></pre>
+                        <aside class="notes">
+                            XDebug hebben we niet perse nodig. Maar het helpt heel erg met debuggen.<br />
+                            <br />
+                            Jim, jij hoeft dit niet perse te doen. Het is ook iets ingewikkelder om te
+                            installeren op Mac.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Start it up</h2>
+                        <p>
+                            Start Apache and MySQL. The other services are not needed.
+                        </p>
+                        <p>
+                            If get a Windows Firewall alert, just allow everything.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Test Apache</h2>
+                        <p>
+                            <a href="http://localhost">http://localhost/</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Test PHP</h2>
+                        <p>
+                            Create a file with the following contents and save it as
+                            <code>C:\xampp\htdocs\test.php</code>
+                        </p>
 					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+&lt;?php
+phpinfo();
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                    </section>
+                    <section>
+                        <h2>Test PHP</h2>
+                        <p>
+                        Go to <a href="http://localhost/test.php">http://localhost/test.php</a>
+                        </p>
+                        <p>
+                            You should see something like:
+                        </p>
+                        <img src="img/phpinfo.png" />
+                    </section>
+                    <section>
+                        <h2>Test PHPMyAdmin + MySQL</h2>
+                        <p>
+                            <a href="http://localhost/phpmyadmin">http://localhost/phpmyadmin/</a>.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Add PHP to PATH</h2>
+                        <p>
+                        <ol>
+                            <li>Start, right click on 'Computer' -&gt; Properties</li>
+                            <li>Column on the left, 'Advanced System Settings'</li>
+                            <li>In tab 'Advanced', click the button 'Environment Variables...'</li>
+                            <li>Under 'System Variables', find 'Path'</li>
+                            <li>Add <code>;C:\xampp\mysql\bin;C:\xampp\php;</code> to the end.</li>
+                        </ol>
+                        </p>
+                        <aside class="notes">
+                            <p>
+                            This is where Mac users should do something else for a while.
+                            </p>
+                            <p>
+                                On Windows 8: Control panel -&gt; System. Then continue with step 2 (Advanced System Settings)
+                            </p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Add PHP to PATH</h2>
+                        <img src="img/path.png" />
+                    </section>
+                    <section>
+                        <h2>Add PHP to PATH</h2>
+                        <p>
+                            Because we changed the PATH, we need to reboot windows.
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Everything working?</h1>
+                    </section>
+                </section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
+                    <section>
+                        <h1>Git and GitHub</h1>
+                    </section>
+                    <section>
+                        <h2>Install git</h2>
+                        <p>
+                        We will simply install <em>GitHub for Windows</em>, because that does
+                        everything we need.
+                        </p>
+
+                        <p>
+                        <a href="http://windows.github.com/">windows.github.com</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>This will take a while...</h2>
+                        <p>
+                            So, in the meanwhile, it is a good idea to create an account at
+                            <a href="http://github.com/">github.com</a>.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Start it up</h2>
+                        <p>
+                            Open the 'GitHub' program. And login with the account you just created.
+                        </p>
+                    </section>
+				</section>
+
+                <section>
+                    <h2>Hardcore forking action!</h2>
+                    <p>
+                        Find the repo <a href="http://github.com/GEWIS/gewisweb">GEWIS/gewisweb</a>, and fork it on your GitHub account.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>I think I'm a clone now</h2>
+                    <p>
+                        Open the GitHub program, find the repository, right mouse click and clone it to <code>C:\xampp\htdocs</code>
+                    </p>
+                    <img src="img/clone.png" />
+                </section>
+
+				<section>
+					<h2>Test it!</h2>
 					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
+                        Go to <a href="http://localhost/gewisweb/public/">localhost/gewisweb/public/</a>.
 					</p>
 				</section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                <section>
+                    <h2>Error?</h2>
+                    <img src="img/error.png" />
+                </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+                <section>
+                    <h2>Error?</h2>
+                    <p>
+                        Just do what it says!
+                        <ol>
+                            <li>Open the <em>GitHub</em> application</li>
+                            <li>Right click on <code>gewisweb</code> repository -&gt; open a shell here</li>
+                            <li>Type <code>php composer.phar install</code></li>
+                        </ol>
+                    </p>
+                </section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+                <section>
+                    <h2>Result!</h2>
+                    <img src="img/screen.png" />
+                </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+                <section>
+                    <h2>We're not done yet!</h2>
+                    <p>
+                        The frontpage is working. But we still have some things to configure.
+                    </p>
+                </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+                <section>
+                    <h2>Database</h2>
+                    <ol>
+                        <li>Open <a href="http://localhost/phpmyadmin">phpmyadmin</a></li>
+                        <li>Create a new database, you should name it something like <code>gewisweb_dev</code></li>
+                    </ol>
+                </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+                <section>
+                    <h2>Database - config</h2>
+                    <p>
+                        In the gewisweb config autoload directory (<code>C:\xampp\htdocs\gewisweb\config\autoload</code>),
+                        copy <code>doctrine.local.php.dist</code> to <code>doctrine.local.php</code> and open it.
+                    </p>
+                </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+                <section>
+                    <h2>Database - config</h2>
+                    <p>Fill in the username, password and database name</p>
+                    <p>This should be root, no password and <code>gewisweb_dev</code></p>
+					<pre><code data-trim contenteditable>
+&lt;?php
+return array(
+    'doctrine' =&gt; array(
+        'connection' =&gt; array(
+            'orm_default' =&gt; array(
+                'driverClass' =&gt;'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' =&gt; array(
+                    'host'     =&gt; 'localhost',
+                    'port'     =&gt; '3306',
+                    'user'     =&gt; 'root',
+                    'password' =&gt; '',
+                    'dbname'   =&gt; 'gewisweb_dev',
+                )
+            )
+        )
+    )
+);
+					</code></pre>
+                </section>
 
+                <section>
+                    <h2>Database - initialization</h2>
+                    <ol>
+                        <li>Open a shell (in GitHub application, right click -&gt; open a shell here)</li>
+                        <li>Execute <code style="white-space: nowrap;">./vendor/bin/doctrine-module orm:schema-tool:create</code></li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Test it!</h2>
+                    <p>
+                        Go to <a href="http://localhost/gewisweb/public/user">localhost/gewisweb/public/user</a>
+                        and try to login with any number and password (longer than 8 chars). It should give:
+                    </p>
+                    <img src="img/login.png" />
+                    <p>
+                        Tell me when there are any errors!
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Developer toolbar - config</h2>
+                    <p>
+                        In the gewisweb config autoload directory (<code>C:\xampp\htdocs\gewisweb\config\autoload</code>),
+                        copy <code>zdt.local.php.dist</code> to <code>zdt.local.php</code>.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Developer toolbar - result</h2>
+                    <img src="img/ztd.png" />
+                </section>
+
+                <section>
+                    <h1>git 101</h1>
+                </section>
+
+                <section>
+                    <h2>Has anyone used Subversion or other version control?</h2>
+
+                    <aside class="notes">
+                        If svn, tell them to forget everything they know about it. Or get brain surgery
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Tutorial!</h2>
+                    <p>
+                    <a href="http://try.github.io/">try.github.io</a>
+                    </p>
+                    <p>
+                        <small>It only takes 15 minutes!</small>
+                    </p>
+
+                    <aside class="notes">
+                        We gaan nu die simpele tutorial doen. Dit kost niet veel tijd, en leert je de basics van git.
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>The End</h1>
+                    <h3>Any questions?</h3>
+                </section>
 			</div>
 
 		</div>
