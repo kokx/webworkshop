@@ -254,6 +254,51 @@ Your e-mail address is &lt;?= $this-&gt;user-&gt;getEmail() ?&gt;.
                     </aside>
                 </section>
 
+                <section>
+                    <h2>Controller</h2>
+                    <p>
+                        Controllers bring everything together. They obtain
+                        models and hand them to the view.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Controller - Example</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+class UserController {
+    public function indexAction()
+    {
+        $user = new User();
+        $user-&gt;setEmail('kokx@gewis.nl');
+        return array('user' =&gt; $user);
+    }
+}
+                    </code></pre>
+                    <aside class="notes">
+                        <p>
+                            This simply gives a user with an email address to
+                            the view.
+                        </p>
+                        <p>
+                            You might have noticed already, but I omitted the
+                            ending php tag. You can do that, and should do
+                            that. It can only give extra (unwanted) whitespace
+                            in the output.
+                        </p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>What is missing?</h1>
+                    <aside class="notes">
+                        There is one thing missing from this picture. MVC
+                        looks nice, but it does not say anything about...?
+                        <br />
+                        <br />
+                        How to actually obtain those models!
+                    </aside>
+                </section>
 			</div>
 
 		</div>
