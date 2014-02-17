@@ -200,6 +200,60 @@
                         I'll explain all of them.
                     </aside>
                 </section>
+
+                <section>
+                    <h2>Model</h2>
+                    <p>
+                        Models represent the internal data of an application.
+                    </p>
+                    <p>
+                        For the GEWIS website, think about users, members,
+                        activities, etc. etc.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Model - example</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+/**
+ * A simple user model
+ */
+class User {
+    protected $lidnr;
+    protected $email;
+    protected $password
+    // and getters / setters
+}
+                    </code></pre>
+                    <aside class="notes">
+                        A simple user model. This class represents one user.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>View</h2>
+                    <p>
+                        The view determines how the given data is shown to the
+                        user.
+                    </p>
+                    <p>
+                        It has some variables (usually models) given by the
+                        controller.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>View - Example</h2>
+                    <pre><code data-trim contenteditable>
+Your e-mail address is &lt;?= $this-&gt;user-&gt;getEmail() ?&gt;.
+                    </code></pre>
+                    <aside class="notes">
+                        Not really interesting. We don't have to bother much
+                        with them anyways, thats what the designers will do.
+                    </aside>
+                </section>
+
 			</div>
 
 		</div>
