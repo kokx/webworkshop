@@ -360,9 +360,57 @@ class User {
                         <strong>Application logic:</strong> Handling data, and
                         what do do with it.<br />
                         <strong>Controller logic:</strong> Handling POST data,
-                        URL parameters
-                    etc.
+                        URL parameters, etc.
                     </aside>
+                </section>
+
+                <section>
+                    <h1>How to instantiate?</h1>
+                    <aside class="notes">
+                        How do we instantiate all these classes?
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Service Locator!</h2>
+                    <p>
+                        The service locator has the knowledge of all services
+                        in the application, and their dependencies. It also
+                        holds track of all of those.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Service Locator - Example Config</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+array(
+    'mapper_user' =&gt; function ($sm) {
+        // $sm is also a service locator instance
+        return new Mapper\User($sm-&gt;get('db'));
+    },
+    'service_user' =&gt; function ($sm) {
+        $service = new Service\User();
+        $service-&gt;setMapper($sm-&gt;get('mapper_user'));
+        return $service;
+    }
+)
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Service Locator - Usage</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+// in your code somewhere
+$service = $sm-&gt;get('service_user');
+// $service is an instance of Service\User
+// which has the $mapper set
+
+// the service manager keeps a record of all
+// instantiated objects, thus this is the same
+$service = $sm-&gt;get('service_user');
+                    </code></pre>
                 </section>
 			</div>
 
