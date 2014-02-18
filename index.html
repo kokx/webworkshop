@@ -59,6 +59,7 @@
                         <li>GitHub-flow</li>
                         <li>MVC</li>
                         <li>Service locator</li>
+                        <li>Permissions</li>
                         <li><code>"Hello, World!"</code></li>
                     </ul>
                 </section>
@@ -175,9 +176,45 @@
                     <aside class="notes">
                         Unfortunately, nobody can really check my code at the
                         moment. But as soon as that is possible, other people
-                        should merge my code.
+                        should merge my code.<br />
+                        <br />
+                        In principle, pull requests don't have to be merged.
+                        You can also have the situation that it won't be
+                        merged, simply because it is a feature or something
+                        like that we don't want.
                     </aside>
                 </section>
+
+                <section>
+                    <h2>Cleanup</h2>
+                    <p>
+                        If the branch has been merged you should clean up
+                        everything.
+                    </p>
+                </section>
+                <section>
+                    <h2>Cleanup - GitHub</h2>
+                    <p>
+                        <small>In a Pull Request, you can do the
+                            following:</small>
+                    </p>
+                    <img src="img/delete-branch.png" />
+                </section>
+                <section>
+                    <h2>Cleanup - local</h2>
+                    <p>
+                        First, checkout master and pull the latest changes
+                        from the main repository.
+                    </p>
+                    <p>
+                        <code>git branch -d &lt;branch&gt;</code>.
+                    </p>
+                    <aside class="notes">
+                        The command will only delete the branch if it is
+                        merged into the current branch.
+                    </aside>
+                </section>
+
 
                 <section>
                     <h2>MVC</h2>
