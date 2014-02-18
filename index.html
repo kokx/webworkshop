@@ -299,6 +299,51 @@ class UserController {
                         How to actually obtain those models!
                     </aside>
                 </section>
+
+                <section>
+                    <h2>Data Mapper</h2>
+                    <img src="img/datamapper.png" />
+                </section>
+
+                <section>
+                    <h2>Data Mapper</h2>
+                    <p>
+                        The data mapper forms the bridge between the Models
+                        and the database.
+                    </p>
+                    <p>
+                        Mappers request data from the database, put the data
+                        into Models and return the Models.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Data Mapper - Example</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+namespace Mapper;
+use Model\User as UserModel;
+class User {
+    /**
+     * Get a user by its ID
+     * @return UserModel
+     */
+    public function findById($id){}
+    /**
+     * Save a user
+     */
+    public function persist(UserModel $user){}
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Still, we are missing something</h2>
+                    <p>
+                        Database communication is fixed, but there is still
+                        some logic to separate.
+                    </p>
+                </section>
 			</div>
 
 		</div>
