@@ -456,6 +456,88 @@ $service = $sm-&gt;get('service_user');
 $service = $sm-&gt;get('service_user');
                     </code></pre>
                 </section>
+
+                <section>
+                    <h1>Permissions</h1>
+                    <aside class="notes">
+                        We want to be able to tell the application what users
+                        are allowed to do.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>ACL</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+$acl = $sm-&gt;get('decision_acl');
+
+if (!$acl-&gt;isAllowed($user, 'decision', 'view')) {
+    throw new \User\Permissions\NotAllowedException(
+        'Not allowed to view admin interface'
+    );
+}
+                    </code></pre>
+                    <aside class="notes">
+                        Here we throw an exception that it is not allowed.
+                        This one will get us a nice error page that tells the
+                        user that they are not allowed to view this.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>ACL - Configuration</h2>
+
+                    <pre><code data-trim contenteditable>
+&lt;?php
+// in the service definition
+'decision_acl' =&gt; function ($sm) {
+    $acl = $sm-&gt;get('acl');
+
+    // add resources for this module
+    $acl-&gt;addResource('organ');
+
+    // users are allowed to view the organs
+    $acl-&gt;allow('user', 'organ', 'view');
+
+    return $acl;
+},
+                    </code></pre>
+                    <aside class="notes">
+                        Here we get the global ACL, and give users the right to
+                        view organs.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Translation</h2>
+                    <pre><code data-trim contenteditable>
+&lt;?php
+// in views:
+echo $this-&gt;translate('Hello');
+
+// every other place:
+$translator = $sm-&gt;get('translator');
+echo $translator-&gt;translate('Hello');
+
+// when you need variables:
+echo sprintf($translator-&gt;translate('Welcome %s, I am %s'), $name, $me);
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Translation</h2>
+                    <p>
+                        Convention: We type all texts in english by default.
+                        Afterwards, everything will be translated to dutch.
+                    </p>
+                </section>
+
+                <section>
+                    <h1>Hello World!!</h1>
+                    <aside class="notes">
+                        Time to create a module.
+                    </aside>
+                </section>
 			</div>
 
 		</div>
